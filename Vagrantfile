@@ -34,5 +34,4 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.synced_folder "./files", "/home/vagrant/files"
 
   config.vm.provision :shell, path: "bootstrap.sh"
-  config.vm.provision "file", source: ".bash_aliases", destination: "~/.bash_aliases"
 end
